@@ -73,7 +73,7 @@ class Body extends Component {
             />
             <List>
               <Subheader>Nested List Items</Subheader>
-              <ListItem primaryText="投资收益2" leftIcon={<ContentSend />} />
+              <ListItem primaryText="投资收益" leftIcon={<ContentSend />} />
               <ListItem primaryText="退出账户" leftIcon={<ContentDrafts />} />
               <ListItem
                   primaryText="投资"
@@ -93,6 +93,33 @@ class Body extends Component {
             disabled={true}
             nestedItems={[
               <ListItem key={1} primaryText="Drafts" leftIcon={<ContentDrafts />} />
+            ]}
+          />
+        ]}
+              />
+            </List>
+            <List>
+              <Subheader>Nested List Items</Subheader>
+              <ListItem primaryText="投资收益2" leftIcon={<ContentSend />} />
+              <ListItem primaryText="退出账户2" leftIcon={<ContentDrafts />} />
+              <ListItem
+                  primaryText="投资2"
+                  leftIcon={<ContentInbox />}
+                  initiallyOpen={false}
+                  primaryTogglesNestedList={true}
+                  nestedItems={[
+          <ListItem
+            key={1}
+            primaryText="Starred  2"
+            leftIcon={<ActionGrade />}
+          />,
+          <ListItem
+            key={2}
+            primaryText="Sent Mail  2"
+            leftIcon={<ContentSend />}
+            disabled={true}
+            nestedItems={[
+              <ListItem key={1} primaryText="Drafts  2" leftIcon={<ContentDrafts />} />
             ]}
           />
         ]}

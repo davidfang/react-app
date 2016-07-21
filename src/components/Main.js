@@ -24,6 +24,7 @@ class Main extends React.Component {
     super(props, context);
     this.handleActive = this.handleActive.bind(this);
   }
+
   /**
    * 跳转tab
    * @param tab
@@ -31,7 +32,16 @@ class Main extends React.Component {
   handleActive(tab) {
     this.context.router.push(tab.props['data-route']);
   }
+
   render() {
+    const style = {
+      man:{marginBottom:'72px'},
+      tabs: {
+        position: 'fixed',
+        width:'96%',
+        bottom: 0
+      }
+    }
     return (
       <MuiThemeProvider muiTheme={muiTheme}>
         <div>
@@ -39,8 +49,10 @@ class Main extends React.Component {
             title="梅 花 盘"
             iconClassNameRight="muidocs-icon-navigation-expand-more"
           />
-          {this.props.children}
-          <Tabs>
+          <div style={style.man} >
+            {this.props.children}
+          </div>
+          <Tabs style={style.tabs}>
             <Tab
               icon={<FontIcon className="material-icons">monetization_on</FontIcon>}
               label="行情"

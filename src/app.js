@@ -23,7 +23,7 @@ injectTapEventPlugin();
 //ReactDOM.render(<Main />, document.getElementById('app'));
 ReactDOM.render((
     <Router history={browserHistory}>
-        <Route  path="/" component={Main}>
+        <Route onEnter={requireAuth}   path="/" component={Main}>
             <IndexRoute component={Body} />
             <Route path="ucenter" component={Ucenter} />
             <Route path="news" component={News} />
