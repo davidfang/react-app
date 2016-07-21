@@ -82,7 +82,7 @@ function apiGet(url, params) {
 function apiPost(url, params) {
 
   return fetch(config.apiHost + url,{
-    method: "POST",
+    method: 'POST',
     body: params
   });
 }

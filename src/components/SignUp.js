@@ -34,10 +34,6 @@ class SignUp extends React.Component {
    * 发送验证码
    */
   getMobileVerification() {
-
-    var mobile = this.state.mobile;
-
-
     var apiCall = apiGet('/v1/user/get-mobile-verification',{mobile: this.state.mobile});
 
     return apiCall.then(function (response) {

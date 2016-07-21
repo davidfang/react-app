@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { Router, Route, Link,IndexRoute ,browserHistory } from 'react-router'
+import { Router, Route, IndexRoute ,browserHistory } from 'react-router'
 import injectTapEventPlugin from 'react-tap-event-plugin';
 import Main from './components/Main'; // Our custom react component
 

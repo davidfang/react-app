@@ -14,6 +14,9 @@ class Countdown extends React.Component {
     this.getMobileVerification = this.getMobileVerification.bind(this);
   }
 
+  /**
+   * 倒计时，自动变数字
+   */
   autoChange() {
     var _self = this;
     let tt = _self.state.countDown - 1;
@@ -41,7 +44,7 @@ class Countdown extends React.Component {
   }
 
 
-  componentDidUpdate() {
+  /*componentDidUpdate() {
     //console.log('componentDidUpdate:',this.props,this.state);
   }
 
@@ -49,7 +52,7 @@ class Countdown extends React.Component {
     //console.log('A shouldComponentUpdate');
     //console.log(nextProps, nextState);
     return true;
-  }
+  }*/
 
   render() {
     if (this.props.check) {

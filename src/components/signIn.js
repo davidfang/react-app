@@ -2,11 +2,10 @@
  * Created by david_fang on 2016/6/24.
  */
 import React from 'react';
-import {Link,browserHistory } from 'react-router';
+import {Link } from 'react-router';
 import TextField from 'material-ui/TextField';
 import RaisedButton from 'material-ui/RaisedButton';
 import {apiPost} from './Auth';
-var config = require('config').default;
 class SignIn extends React.Component {
 
   constructor(props) {

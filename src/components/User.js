@@ -5,9 +5,6 @@ import React from 'react';
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 import getMuiTheme from 'material-ui/styles/getMuiTheme';
 
-import SignIn from './SignIn';
-import SignUp from './SignUp';
-import Sign from './SignOut';
 
 class User extends React.Component {
 

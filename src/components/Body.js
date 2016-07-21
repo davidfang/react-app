@@ -5,7 +5,6 @@
 import React, {Component} from 'react';
 import RaisedButton from 'material-ui/RaisedButton';
 import Dialog from 'material-ui/Dialog';
-import {deepOrange500} from 'material-ui/styles/colors';
 import FlatButton from 'material-ui/FlatButton';
 import {List, ListItem} from 'material-ui/List';
 import ActionGrade from 'material-ui/svg-icons/action/grade';
@@ -17,8 +16,8 @@ import Subheader from 'material-ui/Subheader';
 const styles = {
   container: {
     textAlign: 'center',
-    paddingTop: 20,
-  },
+    paddingTop: 20
+  }
 };
 
 
@@ -30,19 +29,19 @@ class Body extends Component {
     this.handleTouchTap = this.handleTouchTap.bind(this);
 
     this.state = {
-      open: false,
+      open: false
     };
   }
 
   handleRequestClose() {
     this.setState({
-      open: false,
+      open: false
     });
   }
 
   handleTouchTap() {
     this.setState({
-      open: true,
+      open: true
     });
   }
 
@@ -93,9 +92,9 @@ class Body extends Component {
             leftIcon={<ContentSend />}
             disabled={true}
             nestedItems={[
-              <ListItem key={1} primaryText="Drafts" leftIcon={<ContentDrafts />} />,
+              <ListItem key={1} primaryText="Drafts" leftIcon={<ContentDrafts />} />
             ]}
-          />,
+          />
         ]}
               />
             </List>

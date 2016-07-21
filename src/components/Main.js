@@ -8,28 +8,15 @@ import AppBar from 'material-ui/AppBar';
 
 import {Tabs, Tab} from 'material-ui/Tabs';
 import FontIcon from 'material-ui/FontIcon';
-import MapsPersonPin from 'material-ui/svg-icons/maps/person-pin';
 
 import getMuiTheme from 'material-ui/styles/getMuiTheme';
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 
 
-import User from './User';
-import SignIn from './SignIn';
-import SignUp from './SignUp';
-import SignOut from './SignOut';
-import {hasLogin,requireAuth,noAuth} from './Auth';
-const styles = {
-  container: {
-    textAlign: 'center',
-    paddingTop: 200,
-  },
-};
-
 const muiTheme = getMuiTheme({
   palette: {
-    accent1Color: deepOrange500,
-  },
+    accent1Color: deepOrange500
+  }
 });
 
 class Main extends React.Component {

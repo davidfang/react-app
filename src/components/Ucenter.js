@@ -35,9 +35,9 @@ class Ucenter extends React.Component{
             leftIcon={<ContentSend />}
             disabled={true}
             nestedItems={[
-              <ListItem key={1} primaryText="Drafts" leftIcon={<ContentDrafts />} />,
+              <ListItem key={1} primaryText="Drafts" leftIcon={<ContentDrafts />} />
             ]}
-          />,
+          />
         ]}
         />
       </List>
